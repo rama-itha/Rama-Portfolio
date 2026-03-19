@@ -10,7 +10,7 @@ export default function About() {
         {/* Left — bio */}
         <div>
           <div style={{ fontFamily: "'Space Mono', monospace", fontSize: 11, color: "#2563eb", letterSpacing: 3, marginBottom: 12 }}>
-            01 / ABOUT_ME
+            ABOUT_ME
           </div>
           <h2 style={{
             fontFamily: "'Orbitron', sans-serif", fontSize: 36,

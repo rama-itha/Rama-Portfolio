@@ -5,7 +5,7 @@ export default function Education() {
   return (
     <Section id="education" style={{ padding: "80px 10%", maxWidth: 1100, margin: "0 auto" }}>
       <div style={{ fontFamily: "'Space Mono', monospace", fontSize: 11, color: "#2563eb", letterSpacing: 3, marginBottom: 12 }}>
-        05 / EDUCATION_DB
+        EDUCATION_DB
       </div>
       <h2 style={{
         fontFamily: "'Orbitron', sans-serif", fontSize: 36,

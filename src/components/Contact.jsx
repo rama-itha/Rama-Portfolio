@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <Section id="contact" style={{ padding: "80px 10% 120px", maxWidth: 1100, margin: "0 auto", textAlign: "center" }}>
       <div style={{ fontFamily: "'Space Mono', monospace", fontSize: 11, color: "#2563eb", letterSpacing: 3, marginBottom: 12 }}>
-        06 / ESTABLISH_CONNECTION
+        ESTABLISH_CONNECTION
       </div>
       <h2 style={{
         fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(32px, 6vw, 60px)",

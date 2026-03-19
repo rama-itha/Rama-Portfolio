@@ -117,7 +117,7 @@ export default function Projects() {
   return (
     <Section id="projects" style={{ padding: "80px 10%", maxWidth: 1100, margin: "0 auto" }}>
       <div style={{ fontFamily: "'Space Mono', monospace", fontSize: 11, color: "#2563eb", letterSpacing: 3, marginBottom: 12 }}>
-        03 / PROJECT_LOG
+        PROJECT_LOG
       </div>
       <h2 style={{
         fontFamily: "'Orbitron', sans-serif", fontSize: 36,
