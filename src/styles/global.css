@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+}
+
+body {
+  background: #030712;
+  color: #e2e8f0;
+  font-family: "Segoe UI", sans-serif;
+  overflow-x: hidden;
+}
+
+/* ── Nav links ── */
+.nav-link {
+  color: #64748b;
+  font-family: "Space Mono", monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: #60a5fa;
+  background: #3b82f610;
+  text-shadow: 0 0 10px #3b82f6;
+}
+
+/* ── Tech tags ── */
+.tech-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border: 1px solid #1e293b;
+  border-radius: 20px;
+  font-size: 11px;
+  font-family: "Space Mono", monospace;
+  color: #64748b;
+  margin: 4px;
+  transition: all 0.2s;
+}
+.tech-tag:hover {
+  border-color: #3b82f6;
+  color: #60a5fa;
+  box-shadow: 0 0 8px #3b82f640;
+}
+
+/* ── CTA buttons ── */
+.cta-btn {
+  font-family: "Orbitron", sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding: 14px 32px;
+  border: 1px solid #3b82f6;
+  color: #3b82f6;
+  background: transparent;
+  border-radius: 4px;
+  cursor: none;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+.cta-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #3b82f6;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+.cta-btn:hover::before {
+  transform: translateX(0);
+}
+.cta-btn:hover {
+  color: #030712;
+}
+.cta-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Glitch text ── */
+.glitch {
+  position: relative;
+  font-family: "Orbitron", sans-serif;
+  color: #3b82f6;
+  text-shadow: 0 0 20px #3b82f680;
+}
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.glitch::before {
+  color: #0bc9eb;
+  left: 1px;
+  top: 10px;
+  animation: glitch1 2s infinite;
+  clip-path: polygon(0 30%, 100% 30%, 100% 50%, 0 50%);
+}
+.glitch::after {
+  color: #0bc9eb;
+  left: -2px;
+  top: 12px;
+  animation: glitch2 2s infinite;
+  clip-path: polygon(0 60%, 100% 60%, 100% 80%, 0 80%);
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+::-webkit-scrollbar-thumb {
+  background: #2563eb;
+  border-radius: 2px;
+}
+
+/* ── Scanline overlay ── */
+.scanline-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.03) 2px,
+    rgba(0, 0, 0, 0.03) 4px
+  );
+}
+
+/* ── Keyframes ── */
+@keyframes glitch1 {
+  0%, 90%, 100% { transform: translate(0); }
+  92% { transform: translate(-3px, 1px); }
+  94% { transform: translate(3px, -1px); }
+  96% { transform: translate(-1px); }
+}
+@keyframes glitch2 {
+  0%, 85%, 100% { transform: translate(0); }
+  87% { transform: translate(3px, 1px); }
+  89% { transform: translate(-3px, -1px); }
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+@keyframes float {
+  0%, 100% { transform: translateX(-50%) translateY(0px); }
+  50% { transform: translateX(-50%) translateY(-12px); }
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes spinReverse {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(-360deg); }
+}
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 10px #3b82f640; }
+  50% { box-shadow: 0 0 30px #3b82f6, 0 0 60px #3b82f640; }
+}
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateX(-6px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
