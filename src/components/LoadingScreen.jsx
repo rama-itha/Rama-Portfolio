@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
 const BOOT_LINES = [
-  { text: "Initializing RAMA://dev portfolio...", delay: 0 },
-  { text: "Loading distributed systems engineer profile...", delay: 320 },
+  { text: "Initializing RAMA SAI ANUDEEP ITHA portfolio...", delay: 0 },
+  { text: "Loading Software Devlopment Engineer profile...", delay: 320 },
   { text: "Connecting to AWS CloudFront infrastructure...", delay: 680 },
-  { text: "Mounting capacity management systems... OK", delay: 1050 },
-  { text: "Verifying 10M+ events/sec throughput... OK", delay: 1380 },
+  { text: "Mounting systems... OK", delay: 1050 },
+  { text: "Verifying data throughput... OK", delay: 1380 },
   { text: "Loading projects and experience data... OK", delay: 1700 },
   { text: "Calibrating particle network... OK", delay: 2020 },
   { text: "System ready. Launching portfolio...", delay: 2350 },
