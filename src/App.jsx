@@ -11,6 +11,7 @@ import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Chatbot from "./components/Chatbot";
 
 export default function App() {
   const [navActive, setNavActive] = useState("home");
@@ -41,6 +42,7 @@ export default function App() {
           <Contact />
         </div>
         <Footer />
+        <Chatbot />
       </div>
     </>
   );
