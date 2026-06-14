@@ -184,8 +184,8 @@ export default function Chatbot() {
 							<div style={{ fontFamily: "'Orbitron', sans-serif", fontSize: 11, color: "#60a5fa", letterSpacing: 1 }}>
 								RAMA://ASSISTANT
 							</div>
-							<div style={{ fontFamily: "'Space Mono', monospace", fontSize: 9, color: "#22c55e", letterSpacing: 1, marginTop: 2 }}>
-								● online
+							<div style={{ fontFamily: "'Space Mono', monospace", fontSize: 9, color: "#de1313", letterSpacing: 1, marginTop: 2 }}>
+								● offline
 							</div>
 						</div>
 						<div style={{ marginLeft: "auto", fontFamily: "'Space Mono', monospace", fontSize: 9, color: "#334155" }}>

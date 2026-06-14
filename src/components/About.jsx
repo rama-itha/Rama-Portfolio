@@ -20,17 +20,20 @@ export default function About() {
             WHO AM I?
           </h2>
           <p style={{ color: "#94a3b8", lineHeight: 1.9, fontSize: 14, marginBottom: 16 }}>
-            I'm a Software Development Engineer II at{" "}
-            <span style={{ color: "#60a5fa" }}>AWS CloudFront</span>, architecting global content
-            delivery infrastructure that serves customers across every major region worldwide.
+            I'm a Senior Software Engineer at {" "}
+            <span style={{ color: "#60a5fa" }}>Teradata</span>, building cloud-native platform services
+            that power provisioning and lifecycle management of distributed 
+            compute infrastructure across AWS, Azure, and Google Cloud.
+
           </p>
           <p style={{ color: "#94a3b8", lineHeight: 1.9, fontSize: 14, marginBottom: 24 }}>
-            My work spans from{" "}
-            <span style={{ color: "#60a5fa" }}>capacity management automation</span> processing
-            10M+ events/second to cross-functional program delivery across 10+ engineering teams.
-            Outside AWS, I founded{" "}
+            My work spans {" "}
+            <span style={{ color: "#60a5fa" }}>serverless orchestration</span>, event-driven automation frameworks, and scalable
+            provisioning pipelines — previously including capacity management at AWS CloudFront 
+            processing 10M+ events/second across global regions.
+            Outside Teradata, I co-founded{" "}
             <span style={{ color: "#06b6d4" }}>RoomieHub</span> — taking a product from zero to
-            5K+ users with a 25-person team.
+            5K+ users with a 20-person team.
           </p>
           <div style={{ display: "flex", gap: 24, flexWrap: "wrap" }}>
             {ABOUT_STATS.map(([n, l]) => (
@@ -60,17 +63,18 @@ export default function About() {
               <span style={{ color: "#60a5fa" }}>profile</span> = {"{"}
             </div>
             <div style={{ paddingLeft: 16 }}><span style={{ color: "#64748b" }}>name:</span> <span style={{ color: "#86efac" }}>"Rama Sai Anudeep Itha"</span>,</div>
-            <div style={{ paddingLeft: 16 }}><span style={{ color: "#64748b" }}>role:</span> <span style={{ color: "#86efac" }}>"SDE II @ AWS CloudFront"</span>,</div>
-            <div style={{ paddingLeft: 16 }}><span style={{ color: "#64748b" }}>location:</span> <span style={{ color: "#86efac" }}>"Seattle, Washington"</span>,</div>
+            <div style={{ paddingLeft: 16 }}><span style={{ color: "#64748b" }}>role:</span> <span style={{ color: "#86efac" }}>"Senior Software Engineer @ Terdata"</span>,</div>
+            <div style={{ paddingLeft: 16 }}><span style={{ color: "#64748b" }}>team:</span> <span style={{ color: "#86efac" }}>"Core Platform Services"</span>,</div>
+            <div style={{ paddingLeft: 16 }}><span style={{ color: "#64748b" }}>location:</span> <span style={{ color: "#86efac" }}>"San Francisco Bay Area, California"</span>,</div>
             <div style={{ paddingLeft: 16 }}><span style={{ color: "#64748b" }}>focus:</span> [</div>
             <div style={{ paddingLeft: 32 }}><span style={{ color: "#86efac" }}>"Distributed Systems"</span>,</div>
-            <div style={{ paddingLeft: 32 }}><span style={{ color: "#86efac" }}>"Capacity Engineering"</span>,</div>
+            <div style={{ paddingLeft: 32 }}><span style={{ color: "#86efac" }}>"Platform Engineering"</span>,</div>
             <div style={{ paddingLeft: 32 }}><span style={{ color: "#86efac" }}>"Cloud Infrastructure"</span></div>
             <div style={{ paddingLeft: 16 }}>],</div>
-            <div style={{ paddingLeft: 16 }}>
+            {/* <div style={{ paddingLeft: 16 }}>
               <span style={{ color: "#64748b" }}>status:</span>{" "}
               <span style={{ color: "#fbbf24" }}>"open_to_opportunities"</span>
-            </div>
+            </div> */}
             <div>{"}"}</div>
             <div style={{ marginTop: 8, color: "#3b82f6", animation: "blink 1s infinite" }}>▌</div>
           </div>

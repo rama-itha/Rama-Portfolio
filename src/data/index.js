@@ -2,41 +2,55 @@ export const NAV_LINKS = ["home", "about", "skills", "experience", "projects", "
 
 export const SKILLS = [
   { label: "Java / Spring — Backend Systems", pct: 95, color: "#3b82f6" },
-  { label: "Distributed Systems & System Design", pct: 93, color: "#06b6d4" },
-  { label: "AWS Infrastructure (CloudFront, Lambda, DynamoDB)", pct: 90, color: "#3b82f6" },
-  { label: "Python — Automation & ML", pct: 85, color: "#06b6d4" },
+  { label: "Cloud Platform Engineering — AWS · Azure · GCP", pct: 93, color: "#06b6d4" },
+  { label: "Serverless & Event-Driven Infrastructure", pct: 90, color: "#3b82f6" },
+  { label: "AWS Infrastructure (CloudFront, Lambda, DynamoDB, EC2, S3, SNS, SQS, ECS)", pct: 90, color: "#3b82f6" },
+  { label: "Python — Automation, ML & IaC", pct: 85, color: "#06b6d4" },
   { label: "React / TypeScript — Full-Stack", pct: 80, color: "#3b82f6" },
+  { label: "Provisioning & Lifecycle Platform Engineering", pct: 92, color: "#06b6d4" },
   { label: "Capacity Planning & Platform Engineering", pct: 92, color: "#06b6d4" },
 ];
 
 export const TECH_INVENTORY = [
   ["Backend",      ["Java", "Spring", "Python", "REST APIs"]],
-  ["Cloud & Infra", ["AWS CloudFront", "Lambda", "DynamoDB", "IaC"]],
+  ["Cloud & Infra", ["AWS", "Azure", "GCP", "Lambda", "IaC", "Kubernetes"]],
   ["Frontend",     ["React", "TypeScript", "Angular", "Flask", "Django"]],
   ["ML & Other",   ["TensorFlow", "CNN", "OAuth", "Agile"]],
+  ["Platform",     ["Serverless", "Event-Driven", "CI/CD", "Jenkins", "GitHub Actions"]]
 ];
 
-export const HERO_TAGS = ["Java", "AWS", "CloudFront", "Python", "React", "Distributed Systems", "IaC", "TensorFlow"];
+export const HERO_TAGS = ["Java", "AWS", "Azure", "GCP", "Serverless", "Platform Engineering", "Python", "React", "Distributed Systems", "IaC", "TensorFlow", "AI", "ML"];
 
 export const TYPER_LINES = [
-  "SDE II @ AWS CloudFront — Seattle, WA",
-  "Distributed Systems · 10M+ Events/Sec",
-  "6+ years building infrastructure at scale",
+  "Senior Software Engineer @ Teradata",
+  "Cloud Platform Engineering · AWS · Azure · GCP",
+  "7+ years building infrastructure at scale",
   "Turning capacity chaos into automated order",
 ];
 
 export const ABOUT_STATS = [
-  ["6+",   "Years Experience"],
+  ["7+",   "Years Experience"],
   ["10M+", "Events/Sec"],
   ["95%",  "Efficiency Gain"],
 ];
 
 export const EXPERIENCES = [
   {
+    title: "Senior Software Engineer",
+    company: "Teradata",
+    period: "Apr 2026 – Present",
+    color: "#3b82f6",
+    points: [
+      "Design and implement cloud-native platform services on AWS, Azure and Google Cloud for provisioning and lifecycle management of distributed compute infrastructure.",
+      "Build scalable orchestration services for automated provisioning, scaling, upgrades, and teardown of cloud resources across multi-environment deployments.",
+      "Develop distributed backend services supporting large-scale data and analytics platform operations in hybrid cloud environments."
+    ],
+  },
+  {
     title: "Software Development Engineer II",
     company: "Amazon Web Services (AWS) — CloudFront",
-    period: "Jun 2023 – Present · Seattle, WA",
-    color: "#3b82f6",
+    period: "Jun 2023 – Apr 2026 · Seattle, WA",
+    color: "#06b6d4",
     points: [
       "Led design and implementation of CMAP — CloudFront's centralized capacity management platform processing 10M+ events/second with real-time supply/demand monitoring.",
       "Partnered with 10+ engineering teams to streamline platform development, resulting in a 95% increase in operational efficiency across the organization.",

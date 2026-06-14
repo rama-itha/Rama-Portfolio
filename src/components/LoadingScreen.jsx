@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 
 const BOOT_LINES = [
   { text: "Initializing RAMA SAI ANUDEEP ITHA portfolio...", delay: 0 },
-  { text: "Loading Software Devlopment Engineer profile...", delay: 320 },
-  { text: "Connecting to AWS CloudFront infrastructure...", delay: 680 },
+  { text: "Loading Senior Software Engineer profile...", delay: 320 },
+  { text: "Connecting to Teradata engineering systems...", delay: 680 },
   { text: "Mounting systems... OK", delay: 1050 },
   { text: "Verifying data throughput... OK", delay: 1380 },
   { text: "Loading projects and experience data... OK", delay: 1700 },
