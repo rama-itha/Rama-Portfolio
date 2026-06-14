@@ -126,6 +126,19 @@ export const EXPERIENCES = [
       "Built a React web application for automated pipeline deployment and provisioning.",
     ],
   },
+  {
+    title: "Full Stack Engineer",
+    company: "Inspiredge IT Solutions",
+    period: "May 2018 – Jul 2018 · Visakhapatnam, India",
+    color: "#3b82f6",
+    points: [
+      "Designed, developed, and maintained over 20 dynamic and responsive websites for various clients across different industries, leveraging a diverse tech stack.",
+      "Built scalable back-end solutions using PHP, Python, and frameworks like CodeIgniter to support complex functionalities and integrations.",
+      "Implemented modern front-end technologies such as React.JS and Angular.JS, enabling dynamic, interactive user experiences.",
+      "Ensured cross-browser compatibility, mobile responsiveness, and adherence to web standards, resulting in high performing and secure websites.",
+      "Worked closely with clients to gather requirements, provide technical guidance, and deliver projects on time while exceeding quality expectations.",
+    ],
+  },
 ];
 
 export const EDUCATION = [
