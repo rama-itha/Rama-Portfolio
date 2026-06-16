@@ -1,10 +1,22 @@
 import express from "express";
 import cors from "cors";
 import Anthropic from "@anthropic-ai/sdk";
+import { config } from "dotenv";
+import { existsSync } from "fs";
+
+// Load .env if it exists — graceful fallback if missing
+if (existsSync(".env")) {
+  config();
+}
 
 const app = express();
 app.use(cors({ origin: "http://localhost:5173" }));
 app.use(express.json());
+
+if (!process.env.ANTHROPIC_API_KEY) {
+  console.error("❌  ANTHROPIC_API_KEY is not set. Create a .env file with:\n   ANTHROPIC_API_KEY=sk-ant-...");
+  process.exit(1);
+}
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
@@ -24,4 +36,4 @@ app.post("/api/chat", async (req, res) => {
   }
 });
 
-app.listen(3001, () => console.log("Proxy running on http://localhost:3001"));
+app.listen(3001, () => console.log("✅  Proxy running on http://localhost:3001"));

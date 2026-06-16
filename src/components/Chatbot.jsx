@@ -5,13 +5,20 @@ RAMA SAI ANUDEEP ITHA
 Email: saianudeep.itha@gmail.com | Phone: +1 (628) 237-8344 | Location: San Francisco, CA
 
 PROFESSIONAL SUMMARY
-Software Engineer with 6+ years building highly scalable distributed systems and full-stack applications. 
-Achieved 95% operational efficiency improvement, reduced deployment cycles by 50%, and maintained 99.99% uptime 
-for infrastructure processing 10M+ events/second.
+Senior Software Engineer with 7+ years building highly scalable distributed systems, cloud-native platform services,
+and full-stack applications. Currently building multi-cloud provisioning and lifecycle automation at Teradata.
+Achieved 95% operational efficiency improvement and maintained 99.99% uptime for infrastructure processing 10M+ events/second.
 
 PROFESSIONAL EXPERIENCE
 
-Software Development Engineer | Amazon Web Services (CloudFront), Seattle, WA | Jun 2023 - Present
+Senior Cloud Engineer | Teradata — Vantage Core Platform Services | Apr 2026 - Present
+- Design and develop cloud-native platform services powering provisioning and lifecycle management of Teradata compute infrastructure across AWS, Azure, and Google Cloud
+- Build scalable orchestration workflows using serverless and event-driven automation frameworks to manage large-scale infrastructure provisioning, upgrades, and teardown
+- Implement fault-tolerant provisioning pipelines and REST APIs supporting platform orchestration workflows across multi-region, multi-cloud deployments
+- Develop automation for infrastructure scaling, configuration management, and secure connectivity enablement for cloud-deployed compute systems
+- Collaborate with networking and infrastructure teams to design platform capabilities supporting large-scale distributed compute environments
+
+Software Development Engineer II | Amazon Web Services (CloudFront), Seattle, WA | Jun 2023 - Apr 2026
 - Developed CMAP, a centralized PaaS for CloudFront automating global resource planning using Java, React, and AWS,
   achieving 90% test coverage and boosting operational efficiency by 95%
 - Managed end-to-end ML pipelines for global capacity forecasting using Python (scikit-learn, pandas, NumPy),
@@ -184,8 +191,8 @@ export default function Chatbot() {
 							<div style={{ fontFamily: "'Orbitron', sans-serif", fontSize: 11, color: "#60a5fa", letterSpacing: 1 }}>
 								RAMA://ASSISTANT
 							</div>
-							<div style={{ fontFamily: "'Space Mono', monospace", fontSize: 9, color: "#de1313", letterSpacing: 1, marginTop: 2 }}>
-								● offline
+							<div style={{ fontFamily: "'Space Mono', monospace", fontSize: 9, color: loading ? "#f59e0b" : "#22c55e", letterSpacing: 1, marginTop: 2 }}>
+								{loading ? "● thinking..." : "● online"}
 							</div>
 						</div>
 						<div style={{ marginLeft: "auto", fontFamily: "'Space Mono', monospace", fontSize: 9, color: "#334155" }}>
